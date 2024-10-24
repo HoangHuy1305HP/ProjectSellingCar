@@ -1,0 +1,17 @@
+.conclusion {
+    position: relative;
+    left: 100px;
+    margin-top: 100px;
+}
+.conclusion h3 {
+    margin-bottom: 10px;
+}
+.conclusion p {
+    font-family: Lato;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 28.8px;
+    text-align: left;
+    color: hsla(0, 0%, 100%, 1);
+
+}

@@ -1,0 +1,85 @@
+.search-result {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+ 
+}
+
+.car-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.car-card1 {
+  
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid hsla(204, 44%, 13%, 1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.car-image1 {
+  width: 312px;
+  height: 100px; /* Giảm chiều cao của ảnh */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.car-info1 {
+  margin-top: 10px;
+  
+}
+.car-place {
+  margin: 4px 0;
+    color: white;
+    margin-bottom: 20px;
+
+}
+.car-year {
+  margin: 4px 0;
+    color: white;
+    margin-bottom: 20px;
+}
+.car-energy {
+  margin: 4px 0;
+    color: white;
+}
+.car-price {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #007CC7;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 10px;
+}
+
+.review {
+  margin-top: 10px; /* Khoảng cách phía trên phần review */
+}
+.condition {
+  width: 50px;
+  margin-bottom: 20px;
+  position: relative;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #007CC7;
+  top:10px;
+  gap: 10px;
+  border-radius: 3px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border: 1px solid #007CC7
+}

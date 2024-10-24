@@ -1,0 +1,30 @@
+.review-container {
+    text-align: center;
+    color: white;
+    padding: 5px; /* Optional: Add padding if needed */
+  }
+  
+  .review-separator {
+    border: none;
+    border-top: 1px solid #ccc; /* Style the line */
+    margin: 10px 0; /* Add margin for spacing */
+  }
+  
+  .review-stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .star {
+    color: #ffcc00; /* Star color */
+    margin: 0 2px;
+    font-size: 24px; /* Adjust size as needed */
+  }
+  
+  .review-count {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  

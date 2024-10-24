@@ -1,0 +1,17 @@
+.why-section {
+    position: relative;
+    left: 200px;
+    margin-top: 25px;
+}
+
+.why-section h3 {
+    margin-bottom: 10px;
+}
+
+.why-section ul {
+    padding-left: 20px;
+}
+
+.why-section li {
+    margin-bottom: 15px;
+}

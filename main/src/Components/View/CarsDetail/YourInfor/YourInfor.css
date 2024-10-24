@@ -1,0 +1,31 @@
+/* CSS cho phần main của trang YourInfo */
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.info-container {
+    background-color: #1B263B; /* Màu nền giống như trong ContactForm */
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.info-container p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.info-container strong {
+    color: #1D72E8; /* Màu chữ cho các tiêu đề thông tin */
+}
+
+.no-info {
+    color: #FF6F61; /* Màu chữ cho thông báo không có thông tin */
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+.SearchBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 546px;
+    left: 180px;
+    width: 1140px;
+    height: 260px;
+    background-color: #071620;
+    gap: 24px;
+}
+
+.tab {
+    display: flex;
+    gap: 100px;
+    font-family: sans-serif;
+}
+
+.tab>h3 {
+    color: #007CC7;
+}
+
+.search1 {
+    display: flex;
+
+    align-items: center;
+    gap: 40px;
+}
+
+.sicon {
+    font-size: 20px;
+    position: absolute;
+    color: white;
+}
+
+.search1>input {
+    padding: 16px 250px 16px 36px;
+    background-color: #152836;
+    color: #A9A9A9;
+}
+
+.search1>select {
+
+    width: 220px;
+    height: 48px;
+    padding: 0px 20px;
+    background-color: #152836;
+    color: white;
+}
+
+select>section {
+    color: white;
+}
+
+.location-thanh {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.location-thanh>input {
+    width: 50px;
+    padding: 16px 250px 16px 36px;
+}
+
+.licon {
+    font-size: 20px;
+    position: absolute;
+    color: white;
+}
+
+.searchbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbtn>button {
+    width: 150px;
+    height: 48px;
+    background-color: #007CC7;
+    color: white;
+}

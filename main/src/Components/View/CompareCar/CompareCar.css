@@ -1,0 +1,104 @@
+body {
+    background-color: #181818; /* Màu nền tổng thể */
+    color: #fff; /* Màu chữ */
+    font-family: Arial, sans-serif; /* Phông chữ */
+}
+
+.header {
+    text-align: center; /* Căn giữa tiêu đề */
+    padding: 20px; /* Khoảng cách xung quanh tiêu đề */
+}
+
+.select-container {
+    display: flex; /* Sử dụng flex để căn chỉnh */
+    justify-content: center; /* Căn giữa */
+    gap: 20px; /* Khoảng cách giữa hai select */
+    margin-bottom: 20px; /* Khoảng cách dưới select */;
+    margin-top: 20px;
+}
+
+.select {
+    padding: 10px; /* Padding cho select */
+    font-size: 16px; /* Kích thước chữ */
+    border: 1px solid #007CC7; /* Viền cho select */
+    border-radius: 5px; /* Bo góc */
+    background-color: #282828; /* Màu nền cho select */
+    color: #fff; /* Màu chữ trong select */
+    cursor: pointer; /* Con trỏ khi hover */
+}
+
+.comparison-container {
+    display: flex; /* Sử dụng flex để thẻ xe nằm cạnh nhau */
+    justify-content: center; /* Căn giữa */
+    gap: 20px; /* Khoảng cách giữa các thẻ */
+    margin-bottom: 20px; /* Khoảng cách dưới thẻ */
+}
+
+.compare-card {
+    background-color: #222; /* Màu nền thẻ xe */
+    border: 1px solid #007CC7; /* Viền thẻ xe */
+    border-radius: 8px; /* Bo góc */
+    padding: 20px; /* Khoảng cách bên trong thẻ */
+    width: 300px; /* Độ rộng của thẻ xe */
+    text-align: center; /* Căn giữa nội dung thẻ */
+}
+
+.car-image {
+    width: 100%; /* Chiều rộng hình ảnh */
+    height: auto; /* Chiều cao tự động */
+    border-radius: 5px; /* Bo góc cho hình ảnh */
+}
+
+.car-name {
+    font-size: 18px; /* Kích thước chữ cho tên xe */
+    margin: 10px 0; /* Khoảng cách trên và dưới */
+}
+
+.car-price {
+    font-size: 16px; /* Kích thước chữ cho giá xe */
+    color: #007CC7; /* Màu chữ cho giá */
+}
+
+.comparison-table {
+    width: 100%; /* Chiều rộng bảng so sánh */
+    border-collapse: collapse; /* Xóa khoảng cách giữa các ô */
+    margin-top: 20px; /* Khoảng cách trên bảng so sánh */
+}
+
+.comparison-table th,
+.comparison-table td {
+    border: 1px solid #007CC7; /* Viền cho ô */
+    padding: 10px; /* Padding cho ô */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+.reset-button1 {
+    margin-bottom: 20px;
+    left: 47%;
+    position: relative;
+    align-items: end;
+    display: flex;
+    background-color: #ff5c5c;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    /* cursor: pointer; */
+    margin-top: 10px;
+    font-size: 14px;
+    
+}
+
+.reset-button1:hover {
+    background-color: #ff1c1c; /* Màu nền khi hover */
+}
+.button-container {
+    display: flex;
+    justify-content: center; /* Căn giữa */
+    gap: 20px; /* Khoảng cách giữa hai nút */
+    margin-top: 20px; /* Khoảng cách trên */
+}
+
+
+
+

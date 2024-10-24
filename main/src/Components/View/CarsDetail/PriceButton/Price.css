@@ -1,0 +1,13 @@
+.price-button {
+    background-color: black;
+    width: 400px;
+    height: 100px;
+    border: 1px #1da1f2 solid;
+    color: white;
+    margin-top: 100px;
+}
+
+.price-button:hover {
+    background-color: #1da1f2;
+    color: #fff;
+}

@@ -1,0 +1,177 @@
+body {
+    background-color: #0B0C10;
+}
+
+.products-shoppingcart {
+    position: relative;
+}
+
+.body-shoppingcart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-item {
+    display: flex;
+    gap: 30px;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    width: auto;
+
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+
+.cart-item-info {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+.remove-from-cart-btn {
+    padding: 20px 40px;
+    position: absolute;
+    left: 420px;
+    top: 165px;
+    border-radius: 3px;
+    background-color: aqua;
+}
+
+.click-buy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 174px;
+}
+
+.click-buy-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    height: 90px;
+
+    background-color: #4DA8DA;
+    border-radius: 3px;
+}
+
+.cart-item {
+    position: relative;
+}
+
+.h3-product-btn {
+    font-size: 22px;
+}
+
+.empty-product {
+    font-size: 30px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    padding: 20px 50px;
+    background-color: rgb(54, 54, 54);
+    border-radius: 10px;
+}
+
+.checkout-icon {
+    position: fixed;
+    right: 125px;
+    top: 95px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 30px;
+    color: #28a745;
+}
+
+/* CSS cho banner thông tin đơn hàng */
+.checkout-banner {
+    position: fixed;
+    right: 125px;
+    top: 170px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-content h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.banner-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.banner-content li {
+    margin-bottom: 5px;
+}
+
+.banner-content .status {
+    font-weight: bold;
+    color: #ff5722;
+}
+
+.banner-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #ff5722;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/*2*/
+.product-status {
+    margin-top: 10px;
+}
+
+.status {
+    font-weight: bold;
+    color: #007cc7;
+    display: flex;
+    align-items: center;
+}
+
+.status svg {
+    margin-right: 8px;
+}
+
+.order-received-btn {
+    background: none;
+    border: 1px solid #007cc7;
+    color: #007cc7;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-top: 5px;
+}

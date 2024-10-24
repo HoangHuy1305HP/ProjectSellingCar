@@ -1,0 +1,63 @@
+.MoreDescription {
+    color: white;
+    width: 664px;
+    height: 171px;
+    top: 45px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+
+    .description h3 {
+        color: white
+    }
+
+}
+
+.readmore1 {
+    margin-top: 10px;
+    color: hsla(203, 100%, 39%, 1);
+
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dealer h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.dealer {
+    position: relative;
+    right: 30px;
+    margin-top: 30px
+}
+
+.contact {
+    position: relative;
+    right: -375px;
+    margin-top: 30px;
+}
+
+.location {
+    position: relative;
+    right: 25px;
+}
+
+.CreditSimulation {
+
+    position: relative;
+    left: 700px;
+    bottom:405px
+}

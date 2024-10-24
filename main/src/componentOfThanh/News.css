@@ -1,0 +1,162 @@
+.Mews-Narbar {
+    position: relative;
+    padding: 20px 0px;
+    background-color: #12232E;
+}
+
+.main-news-thanh {
+    position: relative;
+    padding: 50px 150px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    background-color: #0B0C10;
+
+}
+
+.title-news-thanh {
+    margin-left: 20px;
+    margin-bottom: 100px;
+}
+
+.h1-news-thanh {
+    color: #ffffff;
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.p-news-thanh {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.h2-news-thanh {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.dealer-electric {
+    display: flex;
+    gap: 20px;
+}
+
+.cmt-news-thanh {
+    display: flex;
+    align-items: center;
+
+}
+
+.cmt-news-icon {
+    font-size: 20px;
+    color: #007CC7;
+}
+
+.latest-news-thanh {
+    padding: 24px;
+    background-color: #123;
+    width: 1152px;
+    height: 250px;
+    margin-bottom: 50px;
+}
+
+.p-dealer-electric {
+    color: #ffffff;
+    padding: 8px 12px;
+    border: 1px solid #007CC7;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.time1 {
+    position: absolute;
+    width: 102px;
+    height: 16px;
+    background-color: #4DA8DA;
+    padding: 12px 20px;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.cmtC-news-thanh {
+    width: 761px;
+    height: 356px;
+}
+
+.firstCmt-news-thanh {
+    width: 761px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cmt-search-news-thanh {
+    display: flex;
+    gap: 59px;
+    width: 1200px;
+}
+
+.input-search-news {
+    padding: 12px 0px 12px 50px;
+    border-radius: 3px;
+    background-color: #152836;
+    color: #A9A9A9;
+    width: 330px;
+}
+
+.searchCmt-news-thanh {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    width: 380px;
+}
+
+.sicon1 {
+    font-size: 20px;
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    color: white;
+}
+
+.popolar-news {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.line-news {
+    width: 100%;
+    height: 0px;
+    border: 1px solid #7d7b7b;
+}
+
+.smallCmt-popular-news {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #12232E;
+    width: 100%;
+}
+
+.ul-smallcmt-news {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.ul-smallcmt-news>li {
+    list-style: none;
+    color: #ffffff;
+    border: 1px solid #007CC7;
+    border-radius: 3px;
+    padding: 8px 12px;
+}
+
+.tags-smallcmt-news {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

@@ -1,0 +1,133 @@
+.review-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #111;
+    color: #fff;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-container img {
+    width: 100%;
+    border: 5px solid #000;
+}
+
+.play-button {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: #fff;
+    font-size: 50px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.price-container {
+    text-align: center;
+    margin-top: 10px;
+    color:white
+}
+
+.price-range1 {
+    font-size: 28px;
+    color: #56a9ff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.rating-container {
+    position: relative;
+    right:180px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.star-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.star-icon .star {
+    font-size: 40px;
+    color: white;
+    margin-right: 10px;
+}
+
+.review-link {
+    font-size: 18px;
+    color: #56a9ff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.criteria-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    max-width: 600px;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+
+.criteria-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #444;
+}
+
+.criteria-item:last-child {
+    border-bottom: none;
+}
+
+.criteria-item span {
+    font-size: 18px;
+    color: #fff;
+}
+
+.criteria-item .stars {
+    font-size: 18px;
+    color: gold;
+}
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Điều chỉnh theo ý muốn */;
+    color:white;
+  }
+  
+  .divider1 {
+    width: 900px;
+    /* max-width: 200px; Điều chỉnh kích thước theo ý muốn */
+    height: 1px;
+    background-color: #555; /* Điều chỉnh màu sắc */
+    margin-bottom: 10px; /* Khoảng cách giữa dòng và ô ngày tháng */
+  }
+  
+  .date-box1 {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    background-color: #58a9e1;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 100px;
+  }

@@ -1,0 +1,69 @@
+.customer-reviews {
+    padding: 40px;
+    background-color: #111;
+    text-align: center;
+    position: relative; /* Để định vị các nút bên trong container */
+}
+
+.reviews-slider {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    position: relative; /* Để căn cứ định vị các nút */
+}
+
+.review-card {
+    background-color: #222;
+    margin: 10px;
+    width: 45%;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+}
+
+.review-image {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.review-content {
+    padding: 20px;
+}
+
+.review-content h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: white;
+}
+
+.review-content h4 {
+    margin-bottom: 10px !important;
+    font-size: 20px !important;
+    color: white !important;
+}
+
+.review-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.review-content ul li {
+    margin-bottom: 5px;
+}
+
+.rating {
+    color: gold;
+    font-size: 24px;
+}
+
+ul>li {
+    list-style: none;
+    color: white;
+}
+
+/* CSS cho các nút hình tròn */

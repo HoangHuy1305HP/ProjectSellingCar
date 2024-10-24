@@ -1,0 +1,62 @@
+.car-recommend {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #12232E;
+    border-radius: 8px;
+    gap: 20px;
+    width: 283px;
+    padding: 16px;
+}
+
+.car-image {
+    width: 282px;
+    height: 189px;
+}
+
+.car-inf {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.new-thanh {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 34px;
+    color: #007CC7;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid #007CC7;
+}
+
+.p-new {
+    display: flex;
+    justify-content: center;
+    color: #007CC7;
+    font-size: 14px;
+
+}
+
+.thongTin {
+    display: flex;
+    /* gap: 20px; */
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar {
+    display: flex;
+}
+
+.calendarIcon {
+    color: #007CC7;
+}

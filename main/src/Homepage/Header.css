@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+.header-thanh {
+    position: relative;
+    background-color: #0B0C10;
+    height: 811px;
+}
+
+
+.message {
+    position: absolute;
+    top: 180px;
+    left: 200px;
+    color: #FFFF;
+}
+
+.message>h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6px;
+    font-family: sans-serif;
+
+}
+
+.p-thanh {
+    width: 329px;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+.navbar-header-thanh {
+    position: absolute;
+    top: 0px;
+}

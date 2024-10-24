@@ -1,0 +1,43 @@
+.search-result {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    
+  }
+  
+  .car-card {
+    background: #0B0C10;
+    border: 2px solid #12232E;
+    color: #fff;
+    
+
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+  }
+  
+  .car-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .car-info {
+    margin-top: 10px;
+  }
+  
+  .car-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007CC7;
+
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 10px;
+  }
+  

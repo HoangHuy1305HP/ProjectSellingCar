@@ -1,0 +1,111 @@
+.car-card {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 16px;
+}
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #003366; 
+    color: #007CC7; 
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .delete-btn:hover {
+    background-color: #002244; 
+  }
+  
+.car-image {
+    width: 150px;
+    height: auto;
+    margin: 12px 0 12px 12px;
+}
+
+.car-info {
+    padding: 16px;
+    position: relative;
+    bottom: 24px;
+}
+
+.car-info h3 {
+    margin: 0 0 8px;
+}
+
+.car-info p {
+    margin: 4px 0;
+    color: white;
+}
+
+.new1 {
+    margin-bottom: 20px;
+    position: relative;
+    top: 13px;
+    justify-content: center;
+    display: flex;
+    width: 43px;
+    height: 25px;
+    color: #007CC7;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid #007CC7;
+}
+
+.new1 p {
+    color: #007CC7;
+
+}
+
+.car-infor {
+    display: flex;
+    justify-content: space-between;
+    width: 307px;
+    height: 30px;
+}
+
+.car-infor div p {
+    width: unset !important;
+}
+
+.shoppingcart {
+    color: #007CC7;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.add-to-cart-btn {
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    position: relative;
+    bottom: 5px;
+}
+
+.custom-toast {
+    position: fixed;
+    bottom: 500px;
+    left: 59%;
+    transform: translateX(-50%);
+    background: #007CC7;
+    color: #fff;
+    padding: 30px 60px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.invertedtriangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 130px solid #007CC7;
+    position: absolute;
+    top: 0px;
+}

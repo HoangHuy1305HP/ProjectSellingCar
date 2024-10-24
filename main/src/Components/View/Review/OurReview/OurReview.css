@@ -1,0 +1,98 @@
+.our-reviews {
+    padding: 40px;
+    /* Tăng padding để tạo khoảng cách */
+
+    text-align: center;
+}
+
+.reviews-slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    /* Căn giữa các thẻ đánh giá */
+}
+
+.review-card {
+    background-color: #222;
+    margin: 0 20px;
+    width: 400px;
+    /* Tăng chiều rộng của các thẻ */
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 18px;
+    /* Tăng kích thước chữ */
+}
+
+.review-image {
+    height: 250px;
+    /* Tăng chiều cao hình ảnh */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 15px;
+    /* Tăng kích thước nút play */
+    color: white;
+    font-size: 24px;
+    /* Tăng kích thước biểu tượng play */
+}
+
+.review-content {
+    padding: 30px;
+    background: hsla(204, 44%, 13%, 1);
+
+    /* Tăng padding cho nội dung */
+}
+
+.review-footer {
+    display: block;
+    /* Tắt flex bằng cách chuyển sang block */
+    margin-top: 20px;
+    color: white;
+    /* Chuyển màu chữ thành trắng */
+}
+
+.rating {
+    color: white;
+    /* Chuyển màu chữ thành trắng */
+    font-size: 24px;
+    /* Giữ kích thước biểu tượng sao */
+    margin-bottom: 10px;
+    /* Thêm khoảng cách dưới cho phần sao */
+    margin-top:30px;
+}
+
+.author-info {
+    display: block;
+    /* Chuyển sang block để xuống dòng */
+    margin-bottom: 10px;
+    /* Thêm khoảng cách dưới */
+}
+
+.author-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+    /* Đặt ảnh giữa dòng */
+}
+
+.comments,
+.date {
+    font-size: 16px;
+    margin-top: 10px;
+    /* Thêm khoảng cách trên */
+    color: white;
+    /* Chuyển màu chữ thành trắng */
+}

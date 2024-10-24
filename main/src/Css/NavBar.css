@@ -1,0 +1,131 @@
+.view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    opacity: 1px;
+    width: 1519px;
+    /* max-width: 1550px; */
+    padding-top: 10px;
+
+}
+
+.navbar-logo img {
+    width: 118px;
+    height: 32px;
+}
+
+/* 
+.navbar-menu {
+    align-items: center;
+    list-style: none;
+    display: flex;
+    gap: 75px;
+    margin: 0;
+    padding: 0;
+} */
+/* 
+.navbar-menu li {
+    position: relative;
+} */
+/* 
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+} */
+
+.article-select {
+    color: white;
+    width: 100px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.article-select>option {
+    cursor: pointer;
+}
+
+
+/* 
+.navbar-menu .dropdown {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+} */
+/* 
+.navbar-menu li:hover .dropdown {
+    display: block;
+} */
+
+.navbar-right {
+    display: flex;
+    position: relative;
+    gap: 60px;
+}
+
+.navbar-right .sign-in {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-right .language-select {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    color: white;
+    width: 40px;
+    height: 24px;
+    border: 0px;
+    background-color: transparent;
+}
+
+.signIn {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.language {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.lIcon {
+    position: absolute;
+    right: 37px;
+}
+
+.btn-apterlogin {
+    padding: 10px;
+    color: #fff;
+    background-color: #007CC7;
+    border-radius: 5px;
+    margin-left: 10px;
+}

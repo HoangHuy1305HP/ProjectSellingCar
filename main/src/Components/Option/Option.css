@@ -1,0 +1,27 @@
+/* src/Components/Options/options.css */
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .options-button {
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .options-button.active {
+    background-color: #1e90ff;
+  }
+  
+  .options-button i {
+    font-size: 18px;
+  }
+  

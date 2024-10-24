@@ -1,0 +1,36 @@
+.square-checkbox {
+    display: inline-block;
+    position: relative;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox-label {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    width: 15px;
+    height: 15px;
+    background-color: #f0f0f0;
+    top: 4px;
+    text-align: center;
+    line-height: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.checkbox:checked+.checkbox-label {
+    background-color: white;
+    color: black;
+}
+
+.Feature {
+    display: flex;
+}

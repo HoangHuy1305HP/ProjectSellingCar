@@ -1,0 +1,28 @@
+.content1 {
+    background-color: #12232E;
+
+}
+
+.content1 h1 {
+    position: relative;
+    bottom: 50px;
+    font-size: xxx-large;
+    left: 40px;
+    /* bottom:20px; */
+    color: white;
+    margin: 0;
+    padding-bottom: 10px;
+    width: 300px;
+}
+
+.content1 p {
+    position: relative;
+    bottom: 50px;
+    font-size: xx-large;
+    left: 40px;
+    /* bottom:20px; */
+    margin: 0;
+    padding: 0;
+    color: white;
+    width: 500px;
+}

@@ -1,0 +1,74 @@
+.credit-simulation {
+    background-color: hsla(204, 64%, 8%, 1); /* Màu nền tối giữ nguyên */
+    color: #fff; /* Màu chữ trắng */
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng đổ bóng */
+}
+
+.credit-simulation h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.credit-simulation-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(50% - 20px);
+    margin-bottom: 15px; /* Thêm khoảng cách giữa các input */
+}
+
+.input-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px; /* Chỉnh kích thước chữ */
+}
+
+.input-group input,
+.input-group select {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: hsla(204, 44%, 13%, 1);
+    color: #fff;
+    font-size: 16px;
+    transition: border 0.3s ease;
+    width: 100%; /* Đảm bảo input và select nằm vừa trong div */
+    box-sizing: border-box; /* Đảm bảo padding không làm rộng thêm input */
+}
+
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #00bfff; /* Thay đổi màu viền khi focus */
+    outline: none;
+}
+
+.monthly-payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 100%;
+    background: hsla(204, 44%, 13%, 1); /* Giữ nguyên màu nền cho payment */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng cho section */
+}
+
+.payment-amount {
+    font-size: 28px;
+    color: #00bfff; /* Màu xanh dương sáng cho số tiền */
+    margin-top: 10px;
+    font-weight: bold; /* Làm đậm số tiền */
+}

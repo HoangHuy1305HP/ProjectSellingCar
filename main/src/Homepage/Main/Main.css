@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+.main-thanh {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* height: 6000px; */
+    background-color: #0B0C10;
+    width: 100%;
+    gap: 135px;
+
+}
+
+.recommendedCar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    gap: 35px;
+    width: 1040px;
+    padding: 16px;
+    height: auto;
+    color: white;
+
+}
+
+.option1 {
+    display: flex;
+    /* align-items: center; */
+    gap: 60px;
+}
+
+.op2 {
+    display: flex;
+    justify-content: center;
+    color: #007CC7;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    width: 466px;
+
+}
+
+.op2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007CC7;
+    /* Màu gạch dưới */
+    transition: width 0.3s ease;
+}
+
+.op2.active::after {
+    width: 80px;
+    /* Gạch dưới đầy chiều rộng của tiêu đề */
+}
+
+.op3 {
+    display: flex;
+    justify-content: center;
+    color: #007CC7;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    width: 80px;
+}
+
+.op3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007CC7;
+    /* Màu gạch dưới */
+    transition: width 0.3s ease;
+}
+
+.op3.active::after {
+    width: 80px;
+    /* Gạch dưới đầy chiều rộng của tiêu đề */
+}
+
+.option1>p {
+    display: flex;
+    align-items: center;
+    margin-left: 700px;
+    color: #007CC7;
+    font-size: 14px;
+}
+
+.car-list-thanh {
+    display: flex;
+    gap: 30px;
+}
+
+.compareCars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 16px;
+}
+
+.ComparedCar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    color: white;
+    background-color: #4DA8DA;
+}
+
+.comparedBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    width: 456px;
+    height: 48px;
+    border: 1px solid #FFFFFF;
+    background-color:
+        #0B0C10;
+}
+
+.cmtImg {
+    display: flex;
+    gap: 20px;
+}
+
+.firstCmt {
+    display: flex;
+    flex-direction: column;
+}
+
+.time {
+    position: absolute;
+    top: 74px;
+    left: 321px;
+    /* top: 2450px; */
+    /* left: 846px; */
+    background-color: #4DA8DA;
+    padding: 8px 12px;
+    color: #FFFFFF;
+}
+
+.cmtOfCustemer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 26px;
+    background-color: #12232E;
+}
+
+.cmtOfCustemer>h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #007CC7;
+}
+
+.comment {
+    position: relative;
+}
+
+.nextCmt {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.secondCmt {
+    display: flex;
+    background-color: #12232E;
+}
+
+.au {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 40px 150px 40px 139px;
+    gap: 30px;
+    background-color: #12232E;
+
+}
+
+.h1au {
+    position: relative;
+    left: 0px;
+}
+
+.au-inf {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.line1 {
+    width: 144px;
+    height: 1px;
+    background-color: #004A77;
+}
+
+.line2 {
+    width: 72px;
+    height: 1px;
+    background-color: #004A77;
+}
+
+.auUnderline {
+    width: 144px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.main-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
+}
+
+.osIcon {
+    display: flex;
+    gap: 30px;
+}
+
+.osIcon>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 301px;
+    height: 142px;
+    border: 2px solid #007CC7;
+    gap: 10px;
+}
+
+.os-icon {
+    color: white;
+    font-size: 34px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+    border-bottom: 46px solid #12232E;
+    position: relative;
+    left: 30px;
+}
+
+.Testimonial-info {
+    background-color: #12232E;
+    display: flex;
+    padding: 30px 25px;
+    width: 1016px;
+    gap: 35px;
+    border-radius: 3px;
+}
+
+.testimonialImg {
+    width: 386px;
+    height: 184px;
+}
+
+.mapContact {
+    background-image: url(../../images/mapContact.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 1438px;
+    height: 700px;
+}
+
+.carLogo {
+    display: flex;
+    gap: 80px;
+    /* height: 200px; */
+}
+
+.carLaga {
+    height: 300px;
+}

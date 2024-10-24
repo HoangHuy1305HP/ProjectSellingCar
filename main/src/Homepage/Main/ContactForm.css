@@ -1,0 +1,44 @@
+.form-concactform-thanh {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-concactform-thanh div {
+    margin-bottom: 2rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    background-color:
+        #152836;
+    color: white;
+    border-radius: 3px;
+}
+
+.Send1 {
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    width: 620px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input:-internal-autofill-selected {
+    background-color:
+        #152836;
+}

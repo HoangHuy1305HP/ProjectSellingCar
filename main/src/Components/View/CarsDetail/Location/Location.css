@@ -1,0 +1,13 @@
+.location h3 {
+    color: white
+}
+
+.location p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.location {
+    position: relative;
+    left: 40px;
+}

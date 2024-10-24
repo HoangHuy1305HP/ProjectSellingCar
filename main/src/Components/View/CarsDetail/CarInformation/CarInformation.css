@@ -1,0 +1,51 @@
+.car-details {
+    background-color: hsla(204, 64%, 8%, 1);
+    ;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 300px;
+    height: 900px
+}
+
+.car-details h2,
+.car-details h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #1c8adb;
+    padding-bottom: 5px;
+}
+
+.car-detail-section {
+    margin-bottom: 15px;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.label {
+    font-weight: bold;
+    color: #a5c3d8;
+}
+
+.value {
+    color: white;
+}
+
+.vehicle-history {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vehicle-history a {
+    color: #1c8adb;
+    text-decoration: none;
+}
+
+.rating {
+    color: #ffcc00;
+}

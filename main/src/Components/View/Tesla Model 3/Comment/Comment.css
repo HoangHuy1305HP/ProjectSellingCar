@@ -1,0 +1,55 @@
+.comment-box {
+    right: 100px;
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    color: #fff;
+  }
+  
+  .comments-list {
+    margin-bottom: 20px;
+  }
+  
+  .comment-item {
+    padding: 10px;
+    
+    
+    margin-bottom: 10px;
+  }
+  
+  .comment-input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  textarea {
+    
+    border: none;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    resize: vertical; /* Cho phép thay đổi kích thước theo chiều dọc */
+    width: 713px;
+    height: 150px;
+    padding: 14px 16px 14px 16px;
+    gap: 10px;
+    border-radius: 3px 0px 0px 0px;
+    opacity: 0px;
+
+  }
+  
+  .comment-button {
+    background-color: #58a9e1;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px; /* Đặt chiều rộng cố định */
+    align-self: flex-start; /* Giúp nút giữ vị trí và không thay đổi khi textarea thay đổi */
+  }
+  
+  .comment-button:hover {
+    background-color: #4090c0;
+  }
