@@ -1,12 +1,11 @@
 import React from "react";
-
 import "./App.css";
-import CompareCar from "./Components/View/CompareCar/CompareCar";
+import Homepage from "./Homepage";
 
 function App() {
   return (
     <div className="container">
-    <CompareCar></CompareCar>
+      <Homepage></Homepage>
     </div>
   );
 }

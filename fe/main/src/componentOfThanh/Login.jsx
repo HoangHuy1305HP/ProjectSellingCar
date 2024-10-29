@@ -30,29 +30,6 @@ const Login = () => {
     }
   };
 
-  // const handleLogin = () => {
-  //   if (!name || !password) {
-  //     // setError("Please enter both name and password.");
-  //     alert("Please enter both name and password.");
-  //     return;
-  //   }
-  //   const users = JSON.parse(localStorage.getItem("users")) || [];
-  //   const user = users.find(
-  //     (user) => user.name === name && user.password === password
-  //   );
-
-  //   if (user) {
-  //     alert("Đăng nhập thành công");
-  //     if (rememberMe) {
-  //       localStorage.setItem("loggedInUser", JSON.stringify(user));
-  //     }
-  //     localStorage.setItem("loggedInUserName", name); // Lưu tên người dùng
-  //     navigate("/homepage"); // Chuyển hướng đến trang chính sau khi đăng nhập thành công
-  //   } else {
-  //     alert("Name hoặc password không đúng");
-  //   }
-  // };
-
   const handleLogin = async () => {
     if (!name || !password) {
       alert("Vui lòng nhập tên và mật khẩu.");
@@ -161,6 +138,9 @@ const Login = () => {
               Register
             </Link>
           </p>
+          <Link to="/forgot-password" className="link">
+            Forgot Password
+          </Link>
         </div>
         <div className="div2-login-thanh">
           <div className="box-login-thanh">
