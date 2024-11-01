@@ -113,7 +113,6 @@ export const forgotPassword = async (req, res) => {
       return res.status(404).json({ message: "Email not found." });
     }
 
-    // Tạo token reset mật khẩu có thời gian hết hạn (ví dụ: 15 phút)
     const resetToken = jwt.sign(
       { userId: user._id },
       process.env.JWT_RESET_SECRET,
@@ -127,7 +126,7 @@ export const forgotPassword = async (req, res) => {
     await sendEmail({
       to: email,
       subject: "Password Reset Request",
-      text: `You requested a password reset. Please click the link to reset your password: ${resetUrl}`,
+      text: `Bạn đã yêu cầu đặt lại mật khẩu . Link đặt lại mật khảu: ${resetUrl}`,
     });
 
     res
@@ -143,11 +142,9 @@ export const resetPassword = async (req, res) => {
     const { token } = req.params;
     const { newPassword } = req.body;
 
-    // Giải mã token
     const decoded = jwt.verify(token, process.env.JWT_RESET_SECRET);
     const userId = decoded.userId;
 
-    // Tìm người dùng và cập nhật mật khẩu mới
     const user = await User.findById(userId);
     if (!user) {
       return res.status(404).json({ message: "User not found." });

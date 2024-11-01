@@ -84,7 +84,7 @@ const Navbar = () => {
           <Link to="/usedcars">Used Cars</Link>
         </li>
         <li>
-          <Link to="/homepage/comparecar">Compare</Link>
+          <Link to="/compare">Compare</Link>
         </li>
         <li>
           <Link to="/homepage/buy">Buy</Link>
