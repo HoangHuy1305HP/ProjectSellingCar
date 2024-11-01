@@ -1,18 +1,72 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Css/NavBar.css";
 import img1 from "../img/anh01.png";
 import { FaUser } from "react-icons/fa6";
 import { GrLanguage } from "react-icons/gr";
 import { Link, useNavigate } from "react-router-dom";
-import News from "../componentOfThanh/News";
+import axios from "axios";
 
 const Navbar = () => {
-  const userName = JSON.parse(localStorage.getItem("loggedInUser"))?.name;
+  const [userName, setUserName] = useState(null);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchUserName = async () => {
+      try {
+        const accessToken = localStorage.getItem("accessToken");
+
+        if (!accessToken) {
+          console.log("No token found in localStorage");
+          return;
+        }
+
+        // Gửi yêu cầu với token trong header
+        const response = await axios.get("http://localhost:2000/auth/user", {
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+          },
+          withCredentials: true, // Thêm cấu hình này nếu cần thiết
+        });
+
+        const { name } = response.data;
+        setUserName(name);
+      } catch (error) {
+        console.error("Không thể lấy thông tin người dùng: ", error);
+
+        // if (error.response && error.response.status === 401) {
+        //   navigate("/login");
+        // }
+      }
+    };
+
+    fetchUserName();
+  }, [navigate]); // Chỉ gọi một lần khi component mount
 
   const handleSelectChange = (event) => {
     const path = event.target.value;
     if (path) navigate(path);
+  };
+
+  const handleLogout = async () => {
+    try {
+      const refreshToken = localStorage.getItem("refreshToken");
+
+      await axios.post(
+        "http://localhost:2000/auth/logout",
+        { refreshToken },
+        {
+          withCredentials: true,
+        }
+      );
+
+      // Xóa token khỏi localStorage sau khi logout thành công
+      localStorage.removeItem("accessToken");
+      localStorage.removeItem("refreshToken");
+
+      navigate("/login");
+    } catch (error) {
+      console.error("Logout failed:", error);
+    }
   };
 
   return (
@@ -38,17 +92,17 @@ const Navbar = () => {
         <li>
           <select className="article-select" onChange={handleSelectChange}>
             <option style={{ color: "black" }} value="">
-              Artical
+              Article
             </option>
             <option style={{ color: "black" }} value="/homepage/article/review">
               Review
             </option>
-            <option style={{ color: "black" }} value="/homepage/artical/news">
+            <option style={{ color: "black" }} value="/homepage/article/news">
               News
             </option>
             <option
               style={{ color: "black" }}
-              value="/homepage/artical/news/loremIpsum"
+              value="/homepage/article/news/loremIpsum"
             >
               Lorem Ipsum
             </option>
@@ -60,19 +114,12 @@ const Navbar = () => {
         {userName ? (
           <div className="user-info">
             <span style={{ color: "white" }}>
-              {" "}
               <span style={{ color: "#007bff", fontSize: "24px" }}>
                 Welcome
               </span>
               , {userName}
             </span>
-            <button
-              onClick={() => {
-                localStorage.removeItem("loggedInUser");
-                window.location.reload(); // Tải lại trang để cập nhật Navbar
-              }}
-              className="btn-apterlogin"
-            >
+            <button onClick={handleLogout} className="btn-apterlogin">
               Logout
             </button>
           </div>

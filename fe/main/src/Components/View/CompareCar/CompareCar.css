@@ -44,7 +44,7 @@ body {
 }
 
 .car-image {
-    width: 100%; /* Chiều rộng hình ảnh */
+   
     height: auto; /* Chiều cao tự động */
     border-radius: 5px; /* Bo góc cho hình ảnh */
 }
