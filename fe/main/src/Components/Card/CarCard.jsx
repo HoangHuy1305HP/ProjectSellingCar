@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import "./CarCard.css";
 import Review from "../Review/Review";
-import Data from "../../Data";
 import { FaCalendarAlt } from "react-icons/fa";
 import { TbSteeringWheel } from "react-icons/tb";
 import { RiGasStationLine } from "react-icons/ri";

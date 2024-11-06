@@ -1,9 +1,8 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import FilterSidebar from "../../FilterSidebar";
 import Search from "../../Search";
 import Result from "../../Result";
 import CarList from "../../Card/CarList";
-import Page from "../../Page/Page";
 import Header from "../../Header/Header";
 import Content from "../Content/Content";
 import "./NewCar.css";
@@ -52,26 +51,6 @@ const NewCar = () => {
     receivedCount,
   } = useContext(CartContext);
 
-  // Fetch danh sách xe từ API
-  const fetchCars = async () => {
-    try {
-      const response = await axios.get("http://localhost:2000/product/getcars");
-      console.log("Dữ liệu sản phẩm nhận được:", response.data); // In ra dữ liệu
-      if (Array.isArray(response.data)) {
-        setCars(response.data);
-      } else {
-        console.error("Dữ liệu không phải là mảng:", response.data);
-        setCars([]);
-      }
-    } catch (error) {
-      console.error("Lỗi khi lấy danh sách xe:", error);
-    }
-  };
-
-  useEffect(() => {
-    fetchCars();
-  }, []);
-
   const handleFilterChange = (newFilters) => {
     setFilters(newFilters);
   };
@@ -91,9 +70,14 @@ const NewCar = () => {
         "http://localhost:2000/product/addcar",
         newCarData
       );
-
-      await fetchCars(); // Thêm xe mới vào danh sách
-
+      console.log("Dữ liệu xe vừa thêm:", response.data);
+      // setCars((prevCars) => [response.data, ...prevCars]); // Thêm xe mới vào danh sách
+      // Cập nhật cars ngay lập tức
+      setCars((prevCars) => {
+        const updatedCars = [response.data, ...prevCars];
+        console.log("Danh sách xe sau khi cập nhật:", updatedCars);
+        return updatedCars;
+      });
       setShowForm(false);
       // Reset form fields
       setNewCarData({
@@ -157,6 +141,7 @@ const NewCar = () => {
             cars={cars}
             onDelete={handleDeleteCar}
           />
+
           <button className="add-more-cars-btn" onClick={handleAddMoreCars}>
             +
           </button>

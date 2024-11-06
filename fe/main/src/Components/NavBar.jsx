@@ -97,12 +97,12 @@ const Navbar = () => {
             <option style={{ color: "black" }} value="/homepage/article/review">
               Review
             </option>
-            <option style={{ color: "black" }} value="/homepage/article/news">
+            <option style={{ color: "black" }} value="/homepage/artical/news">
               News
             </option>
             <option
               style={{ color: "black" }}
-              value="/homepage/article/news/loremIpsum"
+              value="/homepage/artical/news/loremIpsum"
             >
               Lorem Ipsum
             </option>
