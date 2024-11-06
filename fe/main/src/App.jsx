@@ -1,21 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-<<<<<<< HEAD
-import Homepage from './Homepage'
-=======
 import Homepage from "./Homepage";
->>>>>>> a7de8eb6967ba07b6010c76fbcb92deb4e2c7686
+import CarList from "./Components/Card/CarList";
+import NewCar from "./Components/View/NewCar/NewCar";
 
 function App() {
+  const [cars, setCars] = useState([]); // Khởi tạo danh sách xe
+
+  const handleCarAdded = (newCar) => {
+    // Sau khi thêm xe mới, cập nhật lại danh sách
+    setCars((prevCars) => [newCar, ...prevCars]);
+  };
   return (
     <div className="container">
-<<<<<<< HEAD
-    <Homepage></Homepage>
-=======
-      <Homepage></Homepage>
->>>>>>> a7de8eb6967ba07b6010c76fbcb92deb4e2c7686
+      <NewCar onCarAdded={handleCarAdded} />
+      <CarList cars={cars} /> {/* Truyền danh sách xe vào CarList */}
     </div>
   );
 }
-
 export default App;
