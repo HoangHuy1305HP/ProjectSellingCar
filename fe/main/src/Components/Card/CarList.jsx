@@ -78,8 +78,8 @@ const filterCars = (cars, filters = {}, searchTerm = "") => {
   });
 };
 
-const CarList = ({ filters, searchTerm, onDelete }) => {
-  const [cars, setCars] = useState([]);
+const CarList = ({ filters, searchTerm, onDelete, cars, setCars }) => {
+  // const [cars, setCars] = useState([]);
 
   // Hàm lấy dữ liệu từ API
   const fetchCars = async () => {

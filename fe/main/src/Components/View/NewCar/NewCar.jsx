@@ -157,6 +157,7 @@ const NewCar = () => {
             filters={filters}
             searchTerm={searchTerm}
             cars={cars}
+            setCars={setCars}
             onDelete={handleDeleteCar}
           />
 
