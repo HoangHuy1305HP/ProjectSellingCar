@@ -26,12 +26,20 @@ export const uploadImage = (req, res) => {
       resource_type: "auto",
     },
     (err, result) => {
+      if (err) {
+        return res
+          .status(500)
+          .json({ error: "Lỗi khi tải ảnh lên Cloudinary", details: err });
+      }
       if (result) {
-        console.log(result.secure_url);
+        return res.json({
+          message: "Tệp được tải lên thành công.",
+          url: result.secure_url,
+        });
       }
     }
   );
-  res.json({ message: "Tệp được tải lên thành công.", data: file });
+  // res.json({ message: "Tệp được tải lên thành công.", data: file });
 };
 
 export const uploadListImg = async (req, res) => {

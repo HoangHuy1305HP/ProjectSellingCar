@@ -106,17 +106,35 @@ const NewCar = () => {
     }));
   };
 
-  const handleImageUpload = (e) => {
-    const file = e.target.files[0];
+  const handleImageUpload = async (e) => {
+    const file = e.target.files[0]; // Lấy tệp ảnh đã chọn
+
     if (file) {
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        setNewCarData((prevData) => ({
-          ...prevData,
-          image: e.target.result,
-        }));
-      };
-      reader.readAsDataURL(file);
+      const formData = new FormData();
+      formData.append("image", file); // Đính kèm tệp ảnh vào form data
+
+      try {
+        // Gửi yêu cầu POST lên API để tải ảnh lên Cloudinary
+        const response = await axios.post(
+          "http://localhost:2000/api/img/upload",
+          formData,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data", // Đảm bảo loại nội dung là multipart/form-data để tải lên tệp
+            },
+          }
+        );
+
+        // Khi thành công, nhận URL ảnh từ phản hồi và lưu vào trạng thái
+        if (response.data.url) {
+          setNewCarData((prevData) => ({
+            ...prevData,
+            image: response.data.url, // Lưu URL ảnh vào state
+          }));
+        }
+      } catch (error) {
+        console.error("Lỗi khi tải ảnh lên:", error);
+      }
     }
   };
 

@@ -117,7 +117,7 @@ const CarList = ({ filters, searchTerm, onDelete }) => {
   // useEffect để theo dõi sự thay đổi của `cars`
   useEffect(() => {
     console.log("Danh sách xe sau khi cập nhật:", cars);
-  }, [cars]); // Mỗi khi `cars` thay đổi, sẽ log danh sách xe
+  }, [cars]); // Mỗi khi `cars` thay đổi, sẽ log danh sách xex
 
   return (
     <div className="car-list">

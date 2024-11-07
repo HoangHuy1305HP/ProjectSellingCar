@@ -40,7 +40,7 @@ const CarCard = ({ car, onDelete }) => {
           <h3>{car.name}</h3>
         </Link>
         <div style={{ display: "flex", gap: "60px" }}>
-          <h3 style={{ color: "#007CC7" }}>{car.price}</h3>
+          <h3 style={{ color: "#007CC7" }}>{car.price}$</h3>
           <button
             onClick={() => handleAddToCart(car)}
             className="add-to-cart-btn"
